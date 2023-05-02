@@ -1,6 +1,6 @@
 # django-model-repr
-`django-model-repr` is a django library that overrides Model's `__repr__` and provides more detailed information with less effort.
 
+`django-model-repr` is a django library that overrides Model's `__repr__` and provides more detailed information with less effort.
 
 ## Installation
 
@@ -21,7 +21,8 @@ INSTALLED_APPS = (
 This library monkey-patches the django standard library `django.db.models.Model`. It means libraries like `django.contrib.auth` inherit `django.db.models.Model` to create their own models, putting `django_model_repr` somewhere in the middle of the `INSTALLED_APPS` can cause errors.
 
 ## Output
-```
+
+```text
 <User
     id: 2
     password: bcrypt_sha256$
